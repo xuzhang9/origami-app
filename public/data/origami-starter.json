@@ -1,0 +1,347 @@
+[
+  {
+    "id": "origami-dog",
+    "name": "Puppy Dog",
+    "difficulty": "easy",
+    "category": "animals",
+    "thumbnailUrl": "/images/dog-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/dog",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper, colored side down. Fold it in half diagonally to make a triangle.",
+        "imageUrl": "/images/dog-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold the top corners down to make the dog's floppy ears.",
+        "imageUrl": "/images/dog-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Fold up the bottom point to make the chin.",
+        "imageUrl": "/images/dog-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Draw eyes, nose, and a smile on your puppy!",
+        "imageUrl": "/images/dog-step4.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-cat",
+    "name": "Cute Cat",
+    "difficulty": "easy",
+    "category": "animals",
+    "thumbnailUrl": "/images/cat-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/cat",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper. Fold it in half diagonally.",
+        "imageUrl": "/images/cat-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold the two corners up to make pointy cat ears.",
+        "imageUrl": "/images/cat-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Flip over and fold the top point down a little bit.",
+        "imageUrl": "/images/cat-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Draw whiskers, eyes, and a nose to complete your cat!",
+        "imageUrl": "/images/cat-step4.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-frog",
+    "name": "Jumping Frog",
+    "difficulty": "medium",
+    "category": "animals",
+    "thumbnailUrl": "/images/frog-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/frog",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a rectangular piece of paper. Fold the top corners down to the center.",
+        "imageUrl": "/images/frog-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold the sides to meet in the middle.",
+        "imageUrl": "/images/frog-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Fold the bottom up, then fold it back down halfway to create the jumping mechanism.",
+        "imageUrl": "/images/frog-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold the legs out to the sides. Press down on the back to make your frog jump!",
+        "imageUrl": "/images/frog-step4.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-crane",
+    "name": "Paper Crane",
+    "difficulty": "hard",
+    "category": "animals",
+    "thumbnailUrl": "/images/crane-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/crane",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper. Fold in half both ways to create creases, then unfold.",
+        "imageUrl": "/images/crane-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold diagonally both ways, then unfold. You should have a star pattern of creases.",
+        "imageUrl": "/images/crane-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Bring all four corners together to create a small square (this is called a square base).",
+        "imageUrl": "/images/crane-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold the sides to the center, then unfold. Lift the bottom point up and press flat (petal fold).",
+        "imageUrl": "/images/crane-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Repeat on all four sides. Fold the wings down and pull out the head and tail.",
+        "imageUrl": "/images/crane-step5.svg"
+      },
+      {
+        "stepNumber": 6,
+        "instruction": "Fold down the tip of the head. Gently pull the wings apart. Your crane is complete!",
+        "imageUrl": "/images/crane-step6.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-boat",
+    "name": "Sailing Boat",
+    "difficulty": "easy",
+    "category": "toys",
+    "thumbnailUrl": "/images/boat-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/boat",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper. Fold it in half to make a rectangle.",
+        "imageUrl": "/images/boat-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold in half again, then unfold the last fold.",
+        "imageUrl": "/images/boat-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Fold the top corners down to meet the center line.",
+        "imageUrl": "/images/boat-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold up the bottom flaps on both sides.",
+        "imageUrl": "/images/boat-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Open from the bottom and flatten into a square shape.",
+        "imageUrl": "/images/boat-step5.svg"
+      },
+      {
+        "stepNumber": 6,
+        "instruction": "Pull the top corners apart gently to create your boat!",
+        "imageUrl": "/images/boat-step6.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-airplane",
+    "name": "Paper Airplane",
+    "difficulty": "easy",
+    "category": "toys",
+    "thumbnailUrl": "/images/airplane-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/airplane",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a rectangular piece of paper. Fold it in half lengthwise, then unfold.",
+        "imageUrl": "/images/airplane-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold the top corners down to meet the center line.",
+        "imageUrl": "/images/airplane-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Fold the new top edges to the center line again.",
+        "imageUrl": "/images/airplane-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold the plane in half along the center line.",
+        "imageUrl": "/images/airplane-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Fold down the wings on both sides. Now throw it and watch it fly!",
+        "imageUrl": "/images/airplane-step5.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-heart",
+    "name": "Love Heart",
+    "difficulty": "easy",
+    "category": "decorations",
+    "thumbnailUrl": "/images/heart-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/heart",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper, colored side down. Fold in half horizontally, then unfold.",
+        "imageUrl": "/images/heart-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold the bottom edge up to meet the center crease.",
+        "imageUrl": "/images/heart-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Flip over. Fold the two bottom corners up to the top edge to make a point at the bottom.",
+        "imageUrl": "/images/heart-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold the top corners down and tuck the side points behind to round the top of the heart.",
+        "imageUrl": "/images/heart-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Flip over to see your beautiful heart! Give it to someone you love!",
+        "imageUrl": "/images/heart-step5.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-butterfly",
+    "name": "Butterfly",
+    "difficulty": "medium",
+    "category": "animals",
+    "thumbnailUrl": "/images/butterfly-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/butterfly",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of paper. Fold it in half diagonally both ways, then unfold.",
+        "imageUrl": "/images/butterfly-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold in half horizontally, then bring the sides together to create a triangle.",
+        "imageUrl": "/images/butterfly-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Fold the bottom corners up to the top point.",
+        "imageUrl": "/images/butterfly-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Flip over and fold the top point down past the edge to create the body.",
+        "imageUrl": "/images/butterfly-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Fold back up slightly to create a zigzag. Add decorations to the wings!",
+        "imageUrl": "/images/butterfly-step5.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-flower",
+    "name": "Simple Flower",
+    "difficulty": "easy",
+    "category": "flowers",
+    "thumbnailUrl": "/images/flower-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/flower",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Start with a square piece of colorful paper. Fold it in half diagonally both ways, then unfold.",
+        "imageUrl": "/images/flower-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold all four corners to meet in the center.",
+        "imageUrl": "/images/flower-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Flip over and fold all four corners to the center again.",
+        "imageUrl": "/images/flower-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Flip over one more time. Gently pull out the petals from underneath.",
+        "imageUrl": "/images/flower-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Shape the petals by curling them slightly. Your flower is blooming!",
+        "imageUrl": "/images/flower-step5.svg"
+      }
+    ]
+  },
+  {
+    "id": "origami-star",
+    "name": "Lucky Star",
+    "difficulty": "medium",
+    "category": "decorations",
+    "thumbnailUrl": "/images/star-thumb.svg",
+    "sourceUrl": "https://origami-resource-center.com/star",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "instruction": "Cut a long strip of paper about 1cm wide and 30cm long.",
+        "imageUrl": "/images/star-step1.svg"
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Make a loop at one end and thread the other end through to create a knot. Gently tighten into a pentagon shape.",
+        "imageUrl": "/images/star-step2.svg"
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Wrap the long end around each edge of the pentagon, following the shape.",
+        "imageUrl": "/images/star-step3.svg"
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "When you reach the end, tuck the remaining paper into the folds.",
+        "imageUrl": "/images/star-step4.svg"
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Gently pinch each edge of the pentagon inward to create a puffy 3D star!",
+        "imageUrl": "/images/star-step5.svg"
+      }
+    ]
+  }
+]
