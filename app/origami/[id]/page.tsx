@@ -19,7 +19,13 @@ export default function OrigamiDetailPage() {
         // Load from static data first
         const response = await fetch('/data/origami-starter.json');
         const data = await response.json();
-        const found = data.find((o: Origami) => o.id === params.id);
+        let found = data.find((o: Origami) => o.id === params.id);
+
+        // If not found in static data, check localStorage for AI search results
+        if (!found) {
+          const searchCache = JSON.parse(localStorage.getItem('origami_search_cache') || '{}');
+          found = searchCache[params.id as string];
+        }
 
         if (found) {
           setOrigami(found);

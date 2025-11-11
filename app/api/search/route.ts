@@ -77,8 +77,17 @@ export async function POST(request: NextRequest) {
         }, { status: 401 });
       }
 
+      // Check for quota/billing errors
+      if (aiError.status === 429 || aiError.code === 'insufficient_quota' || aiError.message?.includes('quota')) {
+        return NextResponse.json({
+          error: 'OpenAI API quota exceeded. Please check your OpenAI billing and add credits at platform.openai.com/account/billing',
+          needsApiKey: true,
+        }, { status: 402 });
+      }
+
       return NextResponse.json({
         error: 'AI processing failed. Please try again!',
+        details: aiError.message,
       }, { status: 500 });
     }
   } catch (error) {

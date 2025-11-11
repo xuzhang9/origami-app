@@ -49,6 +49,11 @@ export default function SearchBar({ onResult, onError }: SearchBarProps) {
       }
 
       if (data.success && data.origami) {
+        // Save to localStorage so it can be accessed later
+        const searchCache = JSON.parse(localStorage.getItem('origami_search_cache') || '{}');
+        searchCache[data.origami.id] = data.origami;
+        localStorage.setItem('origami_search_cache', JSON.stringify(searchCache));
+
         onResult(data.origami);
         setQuery('');
       } else {
