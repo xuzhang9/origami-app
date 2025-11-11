@@ -55,7 +55,7 @@
 
 ---
 
-## Phase 2: Authentication System
+## Phase 2: Authentication & Settings System
 
 ### 2.1 Device Registration
 - [ ] Create `/app/api/auth/register/route.js`
@@ -79,6 +79,15 @@
   - Kid-friendly design
   - Family code input
   - Success message
+
+### 2.4 Settings Page (API Key Configuration)
+- [ ] Create `/app/settings/page.jsx`
+  - Input field for OpenAI API key
+  - Save to localStorage (encrypted if possible)
+  - Clear/reset API key option
+  - Link to OpenAI API key signup
+- [ ] Update navigation to include Settings
+- [ ] Show warning when API key is not configured
 
 ---
 
@@ -120,14 +129,16 @@
 
 ### 4.2 OpenAI Integration
 - [ ] Create `/app/api/search/route.js`
+- [ ] Accept API key from client (user-provided in settings)
 - [ ] Implement search flow:
   1. Check cache first (database)
   2. If not found, scrape relevant website
-  3. Use GPT-4o to parse and structure content
+  3. Use GPT-4o with user's API key to parse and structure content
   4. Save to cache
   5. Return structured data
-- [ ] Handle API errors
+- [ ] Handle API errors (invalid key, rate limits, etc.)
 - [ ] Add timeout handling
+- [ ] Fallback to cached content if API fails
 
 ### 4.3 Content Parsing
 - [ ] Create AI prompt template for parsing origami instructions
@@ -215,6 +226,8 @@ origami/
 │   │       └── page.jsx           # Step-by-step viewer
 │   ├── favorites/
 │   │   └── page.jsx               # Favorites page
+│   ├── settings/
+│   │   └── page.jsx               # Settings page (API key config)
 │   └── api/
 │       ├── auth/
 │       │   └── register/
@@ -232,7 +245,8 @@ origami/
 │   ├── auth.js                    # Auth helpers
 │   ├── database.js                # Database client
 │   ├── scraper.js                 # Web scraping logic
-│   └── openai.js                  # OpenAI integration
+│   ├── openai.js                  # OpenAI integration
+│   └── settings.js                # Settings management (API key storage)
 ├── public/
 │   ├── data/
 │   │   └── origami-starter.json   # Static origami data
@@ -284,10 +298,12 @@ interface Device {
 ```bash
 # .env.local (for local development)
 FAMILY_CODE=your-secret-family-code-here
-OPENAI_API_KEY=sk-...
 POSTGRES_URL=postgres://...
 UPSTASH_REDIS_REST_URL=https://...
 UPSTASH_REDIS_REST_TOKEN=...
+
+# Note: OpenAI API key is provided by users in Settings page
+# Users enter their own API key which is stored in their browser's localStorage
 ```
 
 ---
@@ -324,11 +340,15 @@ UPSTASH_REDIS_REST_TOKEN=...
 
 ## Cost Estimates (Monthly)
 
+**For Repository Owner (Hosting the App):**
 - **Vercel Hosting:** Free (Hobby tier)
 - **Vercel Postgres:** Free (up to 256MB)
 - **Upstash Redis:** Free (10K requests/day)
-- **OpenAI API:** ~$1-5/month (depends on usage)
-- **Total:** **$1-5/month**
+- **Total:** **$0/month**
+
+**For Each User:**
+- **OpenAI API:** ~$1-5/month (depends on individual usage)
+- Users provide their own API key and pay for their own usage
 
 ---
 
@@ -354,35 +374,38 @@ UPSTASH_REDIS_REST_TOKEN=...
 
 **User searches for "origami frog":**
 1. Check if cached in database → return if found
-2. Search origami websites for relevant content
-3. Scrape HTML content and images
-4. Send to GPT-4o with structured prompt
-5. Parse response into Origami object format
-6. Save to cache database
-7. Return to user
+2. Retrieve user's API key from request (stored in their browser)
+3. Search origami websites for relevant content
+4. Scrape HTML content and images
+5. Send to GPT-4o using user's API key with structured prompt
+6. Parse response into Origami object format
+7. Save to cache database
+8. Return to user
+
+### API Key Management
+
+**User-Provided API Keys:**
+- Users enter their OpenAI API key in Settings page
+- API key stored in browser's localStorage
+- Key sent with each search request to backend
+- Backend uses user's key for OpenAI API calls
+- Users responsible for their own API costs
+- No API keys stored in database or server
+
+**Benefits:**
+- Repository can be public (no secrets in code)
+- No API costs for app owner
+- Users control their own usage and costs
+- More transparent and trustworthy
 
 ### Security Considerations
 
 - Family code stored as environment variable
 - Device tokens are unique, random, and unguessable
 - Rate limiting prevents abuse
-- API keys never exposed to client
+- User API keys transmitted securely (HTTPS)
+- API keys stored only in user's browser (localStorage)
 - Database credentials secured in Vercel
-
----
-
-## Future Enhancements (Post-MVP)
-
-- [ ] User accounts with authentication
-- [ ] Photo upload: Kids can share completed origami
-- [ ] Community features: See what others are making
-- [ ] Video tutorials integration (YouTube embeds)
-- [ ] Difficulty progression tracking
-- [ ] Achievement badges and rewards
-- [ ] Print-friendly diagram export
-- [ ] Multi-language support
-- [ ] Dark mode
-- [ ] Accessibility improvements (screen reader support)
 
 ---
 
